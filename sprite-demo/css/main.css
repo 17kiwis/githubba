@@ -1,0 +1,40 @@
+.icon-sprite, .icon-anker, .icon-youtube {
+  background-image: url('../img/icon-sb26b5c79ce.png');
+  background-repeat: no-repeat;
+}
+
+.icon-anker {
+  background-position: 0 -100px;
+}
+.icon-anker:hover, .icon-anker.anker-hover {
+  background-position: 0 0;
+}
+
+.icon-youtube {
+  background-position: 0 -300px;
+}
+.icon-youtube:hover, .icon-youtube.youtube-hover {
+  background-position: 0 -200px;
+}
+
+i {
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px;
+}
+li a {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+}
+li a span {
+  position: absolute;
+  top: -9999em;
+  left: -9999em;
+}
