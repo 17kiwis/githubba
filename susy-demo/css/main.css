@@ -1,0 +1,81 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+}
+.container:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+body {
+  background: #182240;
+}
+
+main,
+aside {
+  background: #9ed480;
+  border: solid 1px black;
+  padding: 10px;
+}
+
+main {
+  width: 66.10169%;
+  float: left;
+  margin-right: 1.69492%;
+}
+
+aside {
+  width: 32.20339%;
+  float: right;
+  margin-right: 0;
+}
+
+@media (min-width: 769px) and (max-width: 960px) {
+  body {
+    background: #c7c04d;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  body {
+    background: #b7dda0;
+  }
+
+  main {
+    width: 49.15254%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+
+  aside {
+    width: 49.15254%;
+    float: right;
+    margin-right: 0;
+  }
+}
+@media (min-width: 1px) and (max-width: 480px) {
+  body {
+    background: #f2f4f5;
+  }
+
+  main {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  aside {
+    width: 100%;
+    float: right;
+    margin-right: 0;
+  }
+}

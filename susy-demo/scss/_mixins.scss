@@ -1,0 +1,6 @@
+@mixin box() {
+	background: $box-bg;
+	border: solid 1px black;
+	padding: 10px;
+}
+// reads _variable
