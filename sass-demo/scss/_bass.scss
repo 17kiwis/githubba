@@ -1,0 +1,44 @@
+body{
+	background: $bgcolor;
+	font-family: $fontcopy;
+
+
+}
+
+header{
+	@include box_standard;
+	@include rounded_standard;
+	h1{
+		font-family: $fontheading;
+		font-weight: normal;
+		font-size: 1.5em;
+
+	}//end h1
+}//ends header
+
+main{
+	@include box_custom(rgba(255,233,255,.7) )
+	h2{
+		font-weight: $fontheading;
+		font-weight: normal;
+		font-size: 1.3em;
+	}//end h2
+}//end main
+
+nav {
+	ul{
+		li{
+			list-style: none;
+			display: inline-block;
+			padding-right: 20px;
+			a{text-decoration: none;}
+			a:link, a:visited{
+				a:hover, a:active{
+					color: white;
+					background: black;
+				}
+			}
+
+		}//end li
+	}//end ul
+}//end nav
