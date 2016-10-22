@@ -1,0 +1,29 @@
+@mixin rounded_standard {
+	-webkit-border-radius: $round;
+	border-radius: $round;
+}
+
+@mixin rounded_custom($value) {
+	-webkit-border-radius: $value;
+	border-radius: $value;
+}
+
+@mixin rounded_default($radius : $round) {
+	-webkit-border-radius: $radius;
+	border-radius: $radius;
+}
+
+@mixin box_standard {
+	background: rgba(255,255,255,.7);
+	border: solid 1px black;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+@mixin box_custom($background, $border, $pad, $marginbottom) {
+	background: $background;
+	border: $border;
+	padding: $pad;
+	margin-bottom: $marginbottom; 
+}
+

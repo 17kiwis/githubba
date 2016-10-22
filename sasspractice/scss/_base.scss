@@ -1,0 +1,52 @@
+body {
+	background: $bgcolor;
+	font-family: $fontcopy;
+}
+
+h1,
+h2 {
+	font-family: $fontheadings;
+}
+
+header {
+	@include box_standard;
+	@include rounded_standard;
+	h1 {
+		font-weight: normal;
+		font-size: 1.5em;
+	}//end h1
+}//end header
+
+nav {
+	@include box_custom(rgba(255,255,255,.7), solid 10px black, 20px, 40px);
+	@include rounded_custom(10px);
+	ul {
+		list-style: none;
+		li {
+			display: inline-block;
+			padding-right: 20px;
+			a {
+				text-decoration: none;
+				font-size: 1.2em;
+				padding: 4px;
+			}//end a
+			a:link, a:visited {
+				color: black;
+			}//end link/visited
+			a:hover, a:active {
+				color: white;
+				background: black;
+			}//end link/visied
+		}//end li
+	}//end ul
+}//end nav
+
+
+main {
+	@include box_standard();
+	@include rounded_default(40px);
+	h2{
+		font-weight: normal;
+		font-size: 1.3em;
+	}//end h2
+}//end main
