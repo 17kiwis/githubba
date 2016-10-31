@@ -1,0 +1,91 @@
+// @import 'icon/*.png';
+// @include all-icon-sprites;
+
+
+
+i {
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+}
+
+
+body {
+  background-image: url("../img/duo-bg.svg"); 
+
+  background-position: fixed;
+
+  color: white;
+}
+
+section {
+  max-width: 900px;
+  border: solid 8px;
+  border-color: white;
+  
+  margin: 0 auto;
+  margin-top:20px;
+}
+
+nav{
+  
+  border: solid 4px;
+  border-color: white;
+  text-align: center;
+  h2{ display:none;}
+}
+
+
+li {
+    list-style:none;
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+        a {
+          // display: inline-block;
+          width: 100px;
+          height: 100px;
+          color: white;
+          font-size: 3em;
+
+
+
+          span {
+            position: absolute;
+            top: -9999em;
+            left: -9999em;
+          }//span
+    }//a
+}//li
+
+@include susy-breakpoint($large) {
+  body{
+    background: $large-bg;
+  }
+}
+
+@include susy-breakpoint($medium) {
+  body{
+    background: $medium-bg;
+  }
+    main{
+      @include span(5);
+    }
+    section{
+      @include span(5 last);
+    }
+  }
+
+
+@include susy-breakpoint($small) {
+  body{
+    background: $small-bg;
+    } 
+    body{
+      @include span(12);
+    }
+    section{
+      @include span(12 last);     //
+    }
+}
+

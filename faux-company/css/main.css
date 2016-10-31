@@ -1,0 +1,378 @@
+/* line 21, ../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.12/sass/susy/language/susy/_box-sizing.scss */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+/* line 13, ../scss/_boilerbefore.scss */
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+/* line 27, ../scss/_boilerbefore.scss */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/* line 32, ../scss/_boilerbefore.scss */
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+/* line 41, ../scss/_boilerbefore.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+/* line 56, ../scss/_boilerbefore.scss */
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+/* line 69, ../scss/_boilerbefore.scss */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+/* line 79, ../scss/_boilerbefore.scss */
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+/* line 87, ../scss/_boilerbefore.scss */
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/* line 6, ../scss/_base.scss */
+i {
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+}
+
+/* line 13, ../scss/_base.scss */
+body {
+  background-image: url("../img/duo-bg.svg");
+  background-position: fixed;
+  color: white;
+}
+
+/* line 21, ../scss/_base.scss */
+section {
+  max-width: 900px;
+  border: solid 8px;
+  border-color: white;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+/* line 30, ../scss/_base.scss */
+nav {
+  border: solid 4px;
+  border-color: white;
+  text-align: center;
+}
+/* line 35, ../scss/_base.scss */
+nav h2 {
+  display: none;
+}
+
+/* line 39, ../scss/_base.scss */
+li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px;
+  text-align: center;
+}
+/* line 44, ../scss/_base.scss */
+li a {
+  width: 100px;
+  height: 100px;
+  color: white;
+  font-size: 3em;
+}
+/* line 53, ../scss/_base.scss */
+li a span {
+  position: absolute;
+  top: -9999em;
+  left: -9999em;
+}
+
+@media (min-width: 769px) and (max-width: 960px) {
+  /* line 62, ../scss/_base.scss */
+  body {
+    background: #c7c04d;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  /* line 68, ../scss/_base.scss */
+  body {
+    background: #b7dda0;
+  }
+
+  /* line 71, ../scss/_base.scss */
+  main {
+    width: 40.67797%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+
+  /* line 74, ../scss/_base.scss */
+  section {
+    width: 40.67797%;
+    float: right;
+    margin-right: 0;
+  }
+}
+@media (min-width: 1px) and (max-width: 480px) {
+  /* line 81, ../scss/_base.scss */
+  body {
+    background: background-image url("../img/duo-bg.svg") #010101;
+  }
+
+  /* line 84, ../scss/_base.scss */
+  body {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  /* line 87, ../scss/_base.scss */
+  section {
+    width: 100%;
+    float: right;
+    margin-right: 0;
+  }
+}
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+/*
+ * Hide visually and from screen readers
+ */
+/* line 9, ../scss/_boilerafter.scss */
+.hidden {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+/* line 18, ../scss/_boilerafter.scss */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+/* line 35, ../scss/_boilerafter.scss */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+/* line 49, ../scss/_boilerafter.scss */
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+/* line 65, ../scss/_boilerafter.scss */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+/* line 71, ../scss/_boilerafter.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+@media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+@media print {
+  /* line 99, ../scss/_boilerafter.scss */
+  *,
+  *:before,
+  *:after,
+  *:first-letter,
+  *:first-line {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster:
+       http://www.sanbeiji.com/archives/953 */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  /* line 111, ../scss/_boilerafter.scss */
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  /* line 116, ../scss/_boilerafter.scss */
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  /* line 120, ../scss/_boilerafter.scss */
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  /* line 129, ../scss/_boilerafter.scss */
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+
+  /* line 134, ../scss/_boilerafter.scss */
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /*
+   * Printing Tables:
+   * http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+  /* line 145, ../scss/_boilerafter.scss */
+  thead {
+    display: table-header-group;
+  }
+
+  /* line 149, ../scss/_boilerafter.scss */
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  /* line 154, ../scss/_boilerafter.scss */
+  img {
+    max-width: 100% !important;
+  }
+
+  /* line 158, ../scss/_boilerafter.scss */
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* line 165, ../scss/_boilerafter.scss */
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
