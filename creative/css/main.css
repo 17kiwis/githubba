@@ -1,0 +1,93 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Roboto');
+/*==============universal styles==============*/
+*,
+*:before,
+*:after {
+	margin: 0;
+	padding: 0;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	/*find it on css3generator*/
+}
+.clearfix:after{
+	display: table;
+	content: " ";
+	clear: both;
+}
+/*======================global styles============*/
+.left{
+	float: left;
+}
+
+.right{
+	float: right;
+}
+
+.hide{
+	display: none;
+}
+
+body{
+	background: url('../img/bg.png') no-repeat rgba(0, 0, 0, 0.81); 
+	margin: 0;
+ 	padding: 0;
+ 	width: auto;
+ 	height: auto;
+ 	background-size: 100%;
+ 	font-family: 'Roboto';
+}
+
+h1{
+	color: white;
+	font-family: 'Roboto', bold;
+	text-align: center;
+	padding-bottom: 54%;
+  
+  }
+
+  h2{
+  	text-align: center;
+  	color: white;
+  	margin-top: 55px;
+  	margin-bottom: 20px;
+	font-family: 'Roboto', bold;
+  }
+
+h3{
+	text-align: center;
+	margin-bottom: 10px;
+	font-family: 'Indie Flower';
+}
+
+@media (min-width: 769px) and (max-width: 960px) {
+h1{
+	color: white;
+	font-family: 'Roboto', bold;
+	text-align: center;
+	padding-bottom: 51%;
+  
+  }
+ main{}
+}
+
+
+@media (min-width: 481px) and (max-width: 768px) {
+	h1{
+	color: white;
+	font-family: 'Roboto', bold;
+	text-align: center;
+	padding-bottom: 48%;
+  
+  }
+}
+@media (min-width: 1px) and (max-width: 480px) {
+
+	h1{
+	color: white;
+	font-family: 'Roboto', bold;
+	text-align: center;
+	padding-bottom: 45%;
+}
+  }
